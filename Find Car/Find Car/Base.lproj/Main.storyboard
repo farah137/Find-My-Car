@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Find_Car" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="luke-chesser-3POMgLjfYv0-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="wu6-VX-blg">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="859-7i-zLd" userLabel="Save Position">
+                                <rect key="frame" x="162.5" y="308.5" width="50" height="50"/>
+                                <state key="normal" backgroundImage="icons8-circled-p-50"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnj-no-VN6" userLabel="Find Position">
+                                <rect key="frame" x="162" y="418.5" width="50" height="50"/>
+                                <state key="normal" backgroundImage="icons8-circled-f-50"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save Parking Spot" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJ5-Ju-kZO">
+                                <rect key="frame" x="118" y="277.5" width="139" height="21"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Spot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5E-m3-QS8">
+                                <rect key="frame" x="151" y="388.5" width="73" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPark" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46G-Sp-e1i">
+                                <rect key="frame" x="141.5" y="149" width="93" height="48"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="41"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-car-50" translatesAutoresizingMaskIntoConstraints="NO" id="WOS-JK-gzI">
+                                <rect key="frame" x="151" y="540" width="80" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="859-7i-zLd" firstAttribute="top" secondItem="iJ5-Ju-kZO" secondAttribute="bottom" constant="10" id="1wQ-kW-B1Z"/>
+                            <constraint firstItem="859-7i-zLd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3E4-Gt-g5b"/>
+                            <constraint firstItem="wu6-VX-blg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="3eC-A8-hGv"/>
+                            <constraint firstItem="tnj-no-VN6" firstAttribute="top" secondItem="859-7i-zLd" secondAttribute="bottom" constant="60" id="83n-29-OkB"/>
+                            <constraint firstItem="iJ5-Ju-kZO" firstAttribute="top" secondItem="46G-Sp-e1i" secondAttribute="bottom" constant="80.5" id="BbJ-5K-ar5"/>
+                            <constraint firstItem="wu6-VX-blg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="CKk-6W-mTJ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="wu6-VX-blg" secondAttribute="bottom" id="Uh7-3H-tMm"/>
+                            <constraint firstItem="q5E-m3-QS8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="def-Nb-mjd"/>
+                            <constraint firstItem="tnj-no-VN6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ef8-6d-Kqr"/>
+                            <constraint firstItem="859-7i-zLd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g1G-q2-3Kw"/>
+                            <constraint firstItem="q5E-m3-QS8" firstAttribute="top" secondItem="859-7i-zLd" secondAttribute="bottom" constant="30" id="jqq-L4-T59"/>
+                            <constraint firstItem="iJ5-Ju-kZO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="knq-si-SBD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wu6-VX-blg" secondAttribute="trailing" id="llG-RB-3UB"/>
+                            <constraint firstItem="46G-Sp-e1i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p9i-UX-yHz"/>
+                            <constraint firstItem="tnj-no-VN6" firstAttribute="top" secondItem="q5E-m3-QS8" secondAttribute="bottom" constant="10" id="tCn-Ku-fpe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-car-50" width="50" height="50"/>
+        <image name="icons8-circled-f-50" width="50" height="50"/>
+        <image name="icons8-circled-p-50" width="50" height="50"/>
+        <image name="luke-chesser-3POMgLjfYv0-unsplash" width="1700" height="3500"/>
+    </resources>
+</document>
